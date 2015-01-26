@@ -167,6 +167,7 @@
                         'font-size: 16px !important;' +
                         'padding: 8px !important;' +
                         'overflow: visible !important;' +
+                        'font-family: Zawgyi-One;' +
                         //'background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #000), color-stop(50%, #363636), color-stop(100%, #000));' +
                         'z-index: 999999 !important;' +
                         'text-align: left  !important;' +
@@ -182,6 +183,7 @@
                         'font-size: 16px !important;' +
                         'padding: 8px !important;' +
                         'overflow: visible !important;' +
+                        'font-family: Zawgyi-One;' +
                         //'background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #FFF), color-stop(50%, #EEE), color-stop(100%, #FFF));' +
                         'z-index: 999999 !important;' +
                         'text-align: left  !important;' +
@@ -189,6 +191,7 @@
                       '"><div class="translation"></div><div class="additional"></div></div>',
             'customize': '',
         };
+
 
         // TODO
         //localStorage['themes'] = JSON.stringify(themes);
@@ -255,11 +258,11 @@
         function _translate(text, from, to, options, callback) {
             //var url = 'http://translate.google.com/translate_a/t?client=t&otf=1&pc=0';
             //var url = 'http://translate.google.com/translate_a/t?client=t';
-            var url = 'http://www.ornagai.com/index.php/api/word/q/';
+            var url = 'http://www.ornagai.com/search/';
             //url += '&text=' + text;
             //url += '&hl=' + options.first;
 
-	    url += text + '/format/json';
+			url += text;
 
             //if(from != 'auto') {
             //    url += '&sl=' + from;
@@ -336,3 +339,5 @@
             }
             translate(text, ((options.from == 'latest') ? latest : options.from));
         }
+
+		

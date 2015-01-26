@@ -1,7 +1,7 @@
 {
-    "name": "MYM-Translate",
+    "name": "Myanmar Translate",
     "manifest_version": 2,
-    "version": "1.0",
+    "version": "1.0.3",
     "description": "Automatically translate selection/mouseover text by Ornagai translate",
     "background": {
         "scripts": ["translate.html", "translate.js", "inject.js"],
